@@ -1,9 +1,9 @@
 ﻿using Xamarin.Forms;
-using HelloXamarinWorld.ViewModels;
-using HelloXamarinWorld.Services;
-using HelloXamarinWorld.EventHandlers;
+using RpiApi.MobileApp.ViewModels;
+using RpiApi.MobileApp.Services;
+using RpiApi.MobileApp.EventHandlers;
 
-namespace HelloXamarinWorld.Views
+namespace RpiApi.MobileApp.Views
 {
     public partial class GpioStatus : ContentPage
     {

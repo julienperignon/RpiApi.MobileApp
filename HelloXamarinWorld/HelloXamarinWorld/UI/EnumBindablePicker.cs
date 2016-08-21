@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace HelloXamarinWorld.UI
+namespace RpiApi.MobileApp.UI
 {
     public class EnumBindablePicker<T> : Picker where T : struct
     {

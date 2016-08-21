@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace HelloXamarinWorld.iOS
+namespace RpiApi.MobileApp.iOS
 {
     public class Application
     {

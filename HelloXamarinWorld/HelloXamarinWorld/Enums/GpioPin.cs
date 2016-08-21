@@ -1,7 +1,7 @@
-﻿using HelloXamarinWorld.UI;
+﻿using RpiApi.MobileApp.UI;
 
 
-namespace HelloXamarinWorld.Enums
+namespace RpiApi.MobileApp.Enums
 {
     //[0, 1, 4, 7, 8, 9, 10, 11, 15, 17, 18, 21, 22, 23, 24, 25]
     public enum GpioPin

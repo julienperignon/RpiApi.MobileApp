@@ -1,6 +1,6 @@
-﻿using HelloXamarinWorld.Enums;
+﻿using RpiApi.MobileApp.Enums;
 
-namespace HelloXamarinWorld.EventHandlers
+namespace RpiApi.MobileApp.EventHandlers
 {
     public class SelectedGpioPinChangedArgs
     {

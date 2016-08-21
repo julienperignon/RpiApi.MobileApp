@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace HelloXamarinWorld.ViewModels
+namespace RpiApi.MobileApp.ViewModels
 {
     public class GpioStatus : INotifyPropertyChanged
     {

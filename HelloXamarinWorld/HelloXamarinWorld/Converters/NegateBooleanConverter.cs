@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace HelloXamarinWorld.Converters
+namespace RpiApi.MobileApp.Converters
 {
     public class NegateBooleanConverter : IValueConverter
     {

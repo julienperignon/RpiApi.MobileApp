@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace HelloXamarinWorld
+namespace RpiApi.MobileApp
 {
     public partial class App : Application
     {
@@ -13,7 +13,7 @@ namespace HelloXamarinWorld
         {
             InitializeComponent();
 
-            MainPage = new HelloXamarinWorld.Views.MainPage();
+            MainPage = new RpiApi.MobileApp.Views.MainPage();
         }
 
         protected override void OnStart()

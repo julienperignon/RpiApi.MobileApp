@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloXamarinWorld.UI
+namespace RpiApi.MobileApp.UI
 {
     [System.AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
     sealed class CustomDisplayAttribute : Attribute

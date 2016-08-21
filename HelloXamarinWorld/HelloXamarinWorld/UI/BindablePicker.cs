@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Reflection;
 
-namespace HelloXamarinWorld.UI
+namespace RpiApi.MobileApp.UI
 {
     public class BindablePicker : Picker
     {

@@ -1,10 +1,10 @@
-﻿using HelloXamarinWorld.Enums;
-using HelloXamarinWorld.EventHandlers;
+﻿using RpiApi.MobileApp.Enums;
+using RpiApi.MobileApp.EventHandlers;
 using Newtonsoft.Json;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace HelloXamarinWorld.ViewModels
+namespace RpiApi.MobileApp.ViewModels
 {
     public class GpioStatusViewModel : INotifyPropertyChanged
     {

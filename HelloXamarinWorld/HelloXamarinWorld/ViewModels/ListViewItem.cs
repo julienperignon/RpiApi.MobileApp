@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace HelloXamarinWorld
+namespace RpiApi.MobileApp
 {
     public class ListViewItem : INotifyPropertyChanged
     {

@@ -1,5 +1,5 @@
-﻿using HelloXamarinWorld.Enums;
-using HelloXamarinWorld.ViewModels;
+﻿using RpiApi.MobileApp.Enums;
+using RpiApi.MobileApp.ViewModels;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloXamarinWorld.Services
+namespace RpiApi.MobileApp.Services
 {
     public class GpioService
     {

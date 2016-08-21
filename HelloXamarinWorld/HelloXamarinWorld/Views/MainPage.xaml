@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:local="clr-namespace:HelloXamarinWorld.Views"
-             x:Class="HelloXamarinWorld.Views.MainPage">
+              xmlns:local="clr-namespace:RpiApi.MobileApp.Views"
+             x:Class="RpiApi.MobileApp.Views.MainPage">
 
   <local:GpioStatus Title="Status" />
 

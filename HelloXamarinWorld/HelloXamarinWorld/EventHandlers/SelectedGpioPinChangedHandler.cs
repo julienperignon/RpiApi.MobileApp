@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloXamarinWorld.EventHandlers
+namespace RpiApi.MobileApp.EventHandlers
 {
 
     public delegate void SelectedGpioPinChangedHandler(object sender, SelectedGpioPinChangedArgs e);

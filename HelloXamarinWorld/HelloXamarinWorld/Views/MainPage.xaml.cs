@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace HelloXamarinWorld.Views
+namespace RpiApi.MobileApp.Views
 {
     public partial class MainPage : TabbedPage
     {
