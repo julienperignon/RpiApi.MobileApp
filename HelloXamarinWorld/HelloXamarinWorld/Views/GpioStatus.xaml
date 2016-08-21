@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ui="clr-namespace:HelloXamarinWorld.UI;assembly=HelloXamarinWorld"
+             xmlns:converters="clr-namespace:HelloXamarinWorld.Converters;assembly=HelloXamarinWorld"
+             xmlns:enums="clr-namespace:HelloXamarinWorld.Enums;assembly=HelloXamarinWorld"
+             x:Class="HelloXamarinWorld.Views.GpioStatus">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <converters:NegateBooleanConverter x:Key="inverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <!--BindingContext="{Binding x:CurrentGpio}"-->
+  <!--<StackLayout>-->
+  <!--<ui:BindablePicker  ItemsSource="{x:Static GpioViewModel.GpioPinList}}" SelectedItem="{Binding SelectedGpio}"  Grid.Row="0" Grid.ColumnSpan="3" Title="Select GPIO" />-->
+
+
+
+  <!--<Grid Padding="50">
+   
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>-->
+
+
+
+  <!--<Grid.RowDefinitions>
+      <RowDefinition Height="4*" />
+    </Grid.RowDefinitions>-->
+  <!--<Label Text="{Binding Test}" />-->
+
+  <!--<ListView x:Name="listView"
+       ItemTapped="OnItemTapped"
+       ItemsSource="{x:Static local:GpioViewModel.GpioPinList}" Grid.Row="0" Grid.ColumnSpan="3" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+              </Grid.ColumnDefinitions>
+              <Label Text="{Binding Title}"  FontSize="15" Grid.Column="0" />
+              <Label Text="{Binding Details}" FontSize="14" Grid.Column="1" />
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>-->
+
+
+
+  <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+    <StackLayout Orientation="Vertical" Padding="20">
+      <ui:EnumBindablePicker x:TypeArguments="enums:GpioPin" SelectedItem="{Binding ViewModel.SelectedGpioPin}" Title="Select a GpioPin"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"></ui:EnumBindablePicker>
+      <!--<Label Text="IsRefreshing" />
+      <Label Text="{Binding IsRefreshing}" />
+      <Label Text="IsGpioPinSelected" />
+      <Label Text="{Binding IsGpioPinSelected}" />
+      <Label Text="DisplayGpioDetails" />
+      <Label Text="{Binding DisplayGpioDetails}" />-->
+    </StackLayout>
+
+    
+    
+    <StackLayout IsVisible="{Binding DisplayGpioDetails}" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+      <Label Text="Pin" FontAttributes="Bold" FontSize="15" />
+      <Label Text="{Binding GpioStatus.Pin}"  FontSize="15" />
+    </StackLayout>
+
+    <StackLayout IsVisible="{Binding DisplayGpioDetails}" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+      <Label Text="Direction" FontAttributes="Bold"  />
+      <Label Text="{Binding GpioStatus.Direction}"   />
+    </StackLayout>
+
+
+    <StackLayout IsVisible="{Binding DisplayGpioDetails}" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+      <Label Text="Value" FontAttributes="Bold" FontSize="15"  />
+      <Label Text="{Binding GpioStatus.Value}"  FontSize="15"  />
+    </StackLayout>
+
+
+    <StackLayout IsVisible="{Binding DisplayGpioDetails}"  Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+      <Label Text="Edge" FontAttributes="Bold" FontSize="15" />
+      <Label Text="{Binding GpioStatus.Edge}"  FontSize="15" />
+    </StackLayout>
+
+    <StackLayout IsVisible="{Binding DisplayGpioDetails}"  Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+      <Label Text="Direction" FontAttributes="Bold"/>
+      <Switch IsToggled="{Binding GpioStatus.DirectionBool, Mode=TwoWay}" />
+    </StackLayout>
+    <ActivityIndicator Color="Blue" IsRunning="{Binding IsRefreshing}" IsVisible="{Binding IsRefreshing}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+
+  </StackLayout>
+
+
+
+  <!--</Grid>-->
+
+
+
+</ContentPage>
